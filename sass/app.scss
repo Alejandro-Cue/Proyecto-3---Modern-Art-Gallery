@@ -1,11 +1,12 @@
-@import './abstracts/abstracts';
-@import './vendors/vendors';
-@import './base/base';
-@import './components/components';
-@import './layout/layout';
-@import './pages/pages';
-@import './themes/themes';
-@import 'settings';
+@use './abstracts/abstracts' as *;
+@use './vendors/vendors' as *;
+@use './base/base' as *;
+@use './components/components' as *;
+@use './layout/layout' as *;
+@use './pages/pages' as *;
+@use './themes/themes' as *;
+@use './settings' as *;
+
 
 body {
     background-color: red;
