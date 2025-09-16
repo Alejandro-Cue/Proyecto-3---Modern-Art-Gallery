@@ -1,19 +1,20 @@
-/* Error: Undefined variable.
- *   ,
- * 2 |     font-family: $roboto-font;
- *   |                  ^^^^^^^^^^^^
- *   '
- *   sass/themes/_default.scss 2:18  @use
- *   sass/themes/_themes.scss 1:1    @use
- *   sass/app.scss 7:1               root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 2 \2502      font-family: $roboto-font;\d\a   \2502                   ^^^^^^^^^^^^\a   \2575 \a   sass/themes/_default.scss 2:18  @use\a   sass/themes/_themes.scss 1:1    @use\a   sass/app.scss 7:1               root stylesheet";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
+html * {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: red;
+}
+
+/*# sourceMappingURL=style.css.map */
