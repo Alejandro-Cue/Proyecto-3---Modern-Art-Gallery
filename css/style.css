@@ -5,8 +5,749 @@
   box-sizing: border-box;
 }
 
+.footer {
+  margin: 0;
+  padding: 48px 32px;
+  background-color: rgb(21, 21, 21);
+}
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .footer {
+    margin-right: -164px;
+    margin-left: -165px;
+    padding-right: 164px;
+    padding-left: 165px;
+  }
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .footer__design {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px 63px;
+  }
+}
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .footer__design {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+  }
+}
+.footer__design .footer__logo img {
+  width: 110.05px;
+  height: 40px;
+  margin-bottom: 38px;
+}
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .footer__design .footer__logo img {
+    width: 159.57px;
+    height: 58px;
+  }
+}
+.footer__design p {
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 38px;
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .footer__design p {
+    width: 36.6vw;
+    height: auto;
+  }
+}
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .footer__design p {
+    width: 31.84vw;
+    height: auto;
+  }
+}
+.footer__design .footer__design-logos {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.footer__design .footer__design-logos img {
+  width: 20px;
+  height: 20px;
+}
+
+.footer__location {
+  margin: 0;
+  padding: 48px 32px 48px 32px;
+  background-color: rgb(213, 150, 108);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 38px;
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .footer__location {
+    flex-direction: row;
+    padding: 56px 40px 56px 39px;
+  }
+}
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .footer__location {
+    padding: 80px 165px;
+    flex-direction: row;
+  }
+}
+.footer__location-logo {
+  filter: invert(1);
+  width: 110.05px;
+  height: 40px;
+}
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .footer__location-logo {
+    width: 159.57px;
+    height: 58px;
+  }
+}
+.footer__location-description {
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: rgb(21, 21, 21);
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .footer__location-description {
+    width: 36.59vw;
+    height: auto;
+  }
+}
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .footer__location-description {
+    width: 29.85vw;
+    height: auto;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+.footer__location-list {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.footer__location-list img {
+  filter: invert(1);
+  width: 20px;
+  height: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .header {
+    display: flex;
+    justify-content: center;
+    margin-left: 10.1vw;
+    z-index: 2;
+  }
+}
+.header__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .header__container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .header__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+.header__container picture {
+  padding: 0;
+}
+.header__container picture .img {
+  width: 375px;
+  height: 240px;
+  margin-bottom: 0px;
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .header__container picture .img {
+    width: 57vw;
+    height: auto;
+    z-index: 1;
+  }
+}
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .header__container picture .img {
+    width: 37.52vw;
+    height: 50vh;
+    display: block;
+    object-fit: cover;
+  }
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .header__info {
+    z-index: 2;
+    position: absolute;
+    top: 95px;
+    right: 40px;
+    width: 45.4vw;
+    height: auto;
+  }
+}
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .header__info {
+    position: relative;
+    z-index: 3;
+    margin: 0;
+  }
+}
+.header__info .logo {
+  align-self: flex-start;
+}
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .header__info .logo {
+    position: absolute;
+    top: -89px;
+    left: -800px;
+  }
+}
+.header__info .logo img {
+  filter: invert(1);
+  width: 270px;
+  height: 212px;
+  padding: 0 18px;
+  margin: 0;
+}
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .header__info .logo img {
+    filter: none;
+    width: 514px;
+    height: 176px;
+  }
+}
+.header__info p {
+  padding: 0 18px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: rgb(68, 68, 68);
+  margin-bottom: 50px;
+  align-self: flex-start;
+}
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .header__info p {
+    position: absolute;
+    top: -80px;
+    right: -15px;
+    width: 140%;
+    height: auto;
+    font-size: 22px;
+    line-height: 32px;
+    z-index: 4;
+  }
+}
+.header__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  align-self: flex-start;
+  margin-left: 18px;
+  margin-bottom: 100px;
+  background-color: rgb(21, 21, 21);
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-family: "Outfit", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 100%;
+  width: 260px;
+  height: 72px;
+  letter-spacing: 3.64px;
+  transition: all 0.3s ease;
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .header__button {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .header__button {
+    margin-top: 80px;
+  }
+}
+.header__button-text {
+  flex: 1;
+  width: 204px;
+  height: 72px;
+  text-align: center;
+  letter-spacing: 1px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 15px;
+  padding-right: 18px;
+}
+.header__button-icon {
+  background-color: rgb(213, 150, 108);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 72px;
+}
+.header__button-icon img {
+  width: 20px;
+  height: 20px;
+}
+.header__button:hover {
+  color: rgb(213, 150, 108);
+  transform: scale(1.05);
+}
+
+.header__location {
+  position: relative;
+  margin-bottom: 0;
+}
+.header__location-image {
+  width: 100vw;
+  height: 40.88vh;
+}
+.header__location .header__button {
+  position: absolute;
+  top: 0;
+  left: -17px;
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .header__location .header__button {
+    top: 0;
+    left: 39px;
+  }
+}
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .header__location .header__button {
+    top: -80px;
+    left: 156px;
+  }
+}
+.header__location .map__location {
+  position: absolute;
+  top: 42%;
+  left: 41%;
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .header__location .map__location {
+    left: 47%;
+  }
+}
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .header__location .map__location {
+    top: 39%;
+    left: 47%;
+  }
+}
+
+.hero__image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .hero__image {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 40px;
+    margin-left: 39px;
+    gap: 65px;
+    margin-bottom: 11px;
+  }
+}
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .hero__image {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 0;
+    margin-left: 0;
+    gap: 50px;
+  }
+}
+.hero__image-1 {
+  width: 343px;
+  height: 320px;
+  margin-bottom: 25px;
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .hero__image-1 {
+    width: 51.8vw;
+    height: auto;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .hero__image-1 {
+    width: 44.13vw;
+    height: auto;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .hero__lore {
+    width: 28.62vw;
+  }
+}
+.hero__lore .hero__title {
+  font-family: "Big Shoulders", sans-serif;
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 45px;
+  margin-left: 18px;
+  margin-bottom: 21px;
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .hero__lore .hero__title {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .hero__lore .hero__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-left: 0;
+  }
+}
+.hero__lore .hero__description {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  color: rgb(68, 68, 68);
+  margin-left: 18px;
+  margin-right: 18px;
+  margin-bottom: 32px;
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .hero__lore .hero__description {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .hero__lore .hero__description {
+    font-size: 22px;
+    line-height: 32px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+.hero__design {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .hero__design {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 120px;
+    display: grid;
+    grid-template-columns: 51.8vw 36.46vw;
+    grid-template-rows: 43.47vw 55vw;
+    grid-template-areas: "design2 design1" "design2 design3";
+    gap: 11px;
+    align-items: stretch;
+  }
+}
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .hero__design {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 180px;
+    display: grid;
+    grid-template-columns: 44vw 28.9vw;
+    grid-template-rows: 28.42vw 28.42vw;
+    grid-template-areas: "design2 design1" "design2 design3";
+    gap: 30px;
+    align-items: stretch;
+  }
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .hero__design-1 {
+    margin: 0;
+    grid-area: design1;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .hero__design-1 {
+    margin: 0;
+    grid-area: design1;
+    width: 100%;
+    height: 100%;
+  }
+}
+.hero__design-1 img {
+  width: 343px;
+  height: 480px;
+  margin-left: 18px;
+  margin-bottom: 16px;
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .hero__design-1 img {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .hero__design-1 img {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .hero__design-2 {
+    grid-area: design2;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .hero__design-2 {
+    grid-area: design2;
+    width: 100%;
+    height: 100%;
+  }
+}
+.hero__design-2 img {
+  width: 343px;
+  height: 200px;
+  margin-left: 18px;
+  margin-bottom: 16px;
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .hero__design-2 img {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .hero__design-2 img {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.hero__design-3 {
+  background-color: rgb(21, 21, 21);
+  margin-left: 18px;
+  margin-right: 18px;
+  margin-bottom: 120px;
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .hero__design-3 {
+    grid-area: design3;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 40px 10px 40px 10px;
+  }
+}
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .hero__design-3 {
+    grid-area: design3;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 40px 10px 40px 10px;
+  }
+}
+.hero__design-3 h3 {
+  font-family: "Big Shoulders", sans-serif;
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 45px;
+  color: rgb(255, 255, 255);
+  padding-top: 48px;
+  padding-right: 24px;
+  padding-left: 24px;
+  margin-bottom: 24px;
+}
+.hero__design-3 p {
+  color: rgb(255, 255, 255);
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-bottom: 47px;
+}
+
+.location__description {
+  background-color: rgb(21, 21, 21);
+  color: rgb(255, 255, 255);
+  padding: 48px 16px 56px 16px;
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .location__description {
+    padding: 88px 40px 80px 39px;
+    display: flex;
+    justify-content: space-between;
+    gap: 68px;
+  }
+}
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .location__description {
+    padding: 104px 165px 128px 165px;
+    display: flex;
+    justify-content: space-between;
+    gap: 220px;
+  }
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .location__description .location__title {
+    width: 29.04vw;
+    height: auto;
+  }
+}
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .location__description .location__title {
+    width: 24.29vw;
+    height: auto;
+  }
+}
+.location__description .location__title h2 {
+  font-family: "Big Shoulders", sans-serif;
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 45px;
+  margin-bottom: 48px;
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .location__description .location__title h2 {
+    font-size: 55px;
+    line-height: 50px;
+  }
+}
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .location__description .location__title h2 {
+    font-size: 70px;
+    line-height: 70px;
+  }
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .location__description .location__address {
+    width: 51.82vw;
+    height: auto;
+  }
+}
+.location__description .location__address h3 {
+  color: rgb(213, 150, 108);
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 32px;
+  margin-bottom: 20px;
+}
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .location__description .location__address h3 {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 24px;
+  }
+}
+.location__description .location__address-newport {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .location__description .location__address-newport {
+    font-size: 22px;
+    line-height: 32px;
+  }
+}
+.location__description .location__address-ri {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .location__description .location__address-ri {
+    font-size: 22px;
+    line-height: 32px;
+  }
+}
+.location__description .location__address-usa {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .location__description .location__address-usa {
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 32px;
+  }
+}
+.location__description .location__address-lorem {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+}
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .location__description .location__address-lorem {
+    width: 37.48vw;
+    height: auto;
+    font-size: 22px;
+    line-height: 32px;
+  }
+}
+
 html * {
-  font-family: "Poppins", sans-serif;
+  font-family: "Outfit", sans-serif;
 }
 
 body {
@@ -14,7 +755,36 @@ body {
 }
 
 body {
-  background-color: red;
+  background-color: rgb(252, 250, 249);
+  position: relative;
+}
+@media (max-width: 1440px) and (min-width: 1025px) {
+  body {
+    padding-right: 164px;
+    padding-left: 165px;
+  }
+  body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 31.27vw;
+    height: 31.28%;
+    background-color: rgb(21, 21, 21);
+    z-index: 1;
+  }
+}
+
+.location {
+  background-color: rgb(252, 250, 249);
+  position: relative;
+}
+.location::after {
+  display: none;
+}
+.location {
+  margin: 0;
+  padding: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
