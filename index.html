@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CSS Proyectos 06 - Grocery</title>
+  <title>CSS Entregable 03 | Modern Art Gallery</title>
   <link rel="stylesheet" href="css/style.css">
   <meta name="description" content="">
 
@@ -19,11 +19,75 @@
 
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <header class="header">
+    <div class="header__container">
+      <picture>
+        <source srcset="./img/header-img-desktop.jpg" media="(min-width: 1024px)">
+        <source srcset="./img/header-img-tablet.jpg" media="(min-width: 768px)">
+        <img class="img" src="./img/header-img-mobile.jpg" alt="Imagen de cabecera responsive">
+      </picture>
+      <div class="header__info">
+        <a class="logo" href="#"><img src="./img/modernartgallery-logo.svg" alt="Logo de Modern Art Gallery"></a>
+        <p>The arts in the collection of the Modern Art Gallery all started from a spark of inspiration. Will these pieces inspire you? Visit us and find out.</p>
+        <a class="header__button" href="./location.html">
+          <span class="header__button-text">OUR LOCATION</span>
+          <span class="header__button-icon">
+            <img src="./img/flecha.svg" alt="Imagen de flecha derecha.">
+          </span>
+        </a>
+      </div>
+    </div>
+  </header>
 
+  <main class="hero">
+    <div class="hero__image">
+      <picture>
+        <source srcset="./img/hero-img-1-desktop.jpg" media="(min-width: 1024px)">
+        <source srcset="./img/hero-img-1-tablet.jpg" media="(min-width: 768px)">
+        <img class="hero__image-1" src="./img/hero-img-1-mobile.jpg" alt="Imagen de cabecera responsive">
+      </picture>
+      <div class="hero__lore">
+        <h1 class="hero__title">YOUR DAY AT THE GALLERY</h1>
+        <p class="hero__description">Wander through our distinct collections and find new insights about our artists. Dive into the details of their creative process.</p>
+      </div>
+    </div>
+    <div class="hero__design">
+      <picture class="hero__design-1">
+        <source srcset="./img/hero-img-2-desktop.jpg" media="(min-width: 1024px)">
+        <source srcset="./img/hero-img-2-tablet.jpg" media="(min-width: 768px)">
+        <img src="./img/hero-img-2-mobile.jpg" alt="Imagen de cabecera responsive">
+      </picture>
+      <picture class="hero__design-2">
+        <source srcset="./img/hero-img-3-desktop.jpg" media="(min-width: 1024px)">
+        <source srcset="./img/hero-img-3-tablet.jpg" media="(min-width: 768px)">
+        <img src="./img/hero-img-3-mobile.jpg" alt="Imagen de cabecera responsive">
+      </picture>
+      <div class="hero__design-3">
+        <h3>COME & BE INSPIRED</h3>
+        <p>We’re excited to welcome you to our gallery and see how our collections influence you.</p>
+      </div>      
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__design">
+      <a class="footer__logo" href="#"><img src="./img/modernartgallery-logo.svg" alt="Logotipo Modern Art Gallery"></a>
+      <p>The Modern Art Gallery is free to all visitors and open seven days a week from 8am to 9pm. Find us at 99 King Street, Newport, USA.</p>
+      <div class="footer__design-logos">
+        <a href="#"><img src="./img/facebook-logo.svg" alt="Logotipo de Facebook"></a>
+        <a href="#"><img src="./img/instagram-logo.svg" alt="Logotipo de Instagram"></a>
+        <a href="#"><img src="./img/twitter-logo.svg" alt="Logotipo de Twitter"></a>
+      </div>
+    </div>
+  </footer>
 
+  <script type="module" src="./src/main.js"></script>
 </body>
 
 </html>

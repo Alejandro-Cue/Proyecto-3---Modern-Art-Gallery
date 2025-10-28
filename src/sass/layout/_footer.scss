@@ -1,0 +1,121 @@
+@use '../abstracts/index' as abs;
+
+.footer {
+    margin: 0;
+    padding: 48px 32px;
+    background-color: abs.$black-color;
+    @include abs.breakpoint(desktop) {
+        margin-right: -164px;
+        margin-left: -165px;
+        padding-right: 164px;
+        padding-left: 165px;
+    }
+    &__design {
+        @include abs.breakpoint(tablet) {
+            display: flex;
+            justify-content: space-between;
+            gap: 24px 63px;
+
+        }
+        @include abs.breakpoint(desktop) {
+            display: flex;
+            justify-content: space-between;
+            gap: 60px;
+        }
+        .footer__logo {
+            img{
+                width: 110.05px;
+                height: 40px;
+                margin-bottom: 38px;
+                @include abs.breakpoint(desktop) {
+                    width: 159.57px;
+                    height: 58px;
+                }
+            }
+        }
+        p {
+            font-family: abs.$outfit-font;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+            color: abs.$white-color;
+            margin-bottom: 38px;
+            @include abs.breakpoint(tablet) {
+                width: 36.6vw;
+                height: auto;
+            }
+            @include abs.breakpoint(desktop) {
+                width: 31.84vw;
+                height: auto;
+            }
+        }
+        .footer__design-logos {
+            display: flex;
+            justify-content: flex-start;
+            gap: 20px;
+            img {
+                width: 20px;
+                height: 20px;
+            }
+        }
+        
+    }
+}
+
+// Location
+
+.footer__location {
+    margin: 0;
+    padding: 48px 32px 48px 32px;
+    background-color: abs.$gold-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 38px;
+    @include abs.breakpoint(tablet) {
+        flex-direction: row;
+        padding: 56px 40px 56px 39px;
+    }
+    @include abs.breakpoint(desktop) {
+        padding: 80px 165px;
+        flex-direction: row;
+
+    }
+    &-logo {
+        filter: invert(1);
+        width: 110.05px;
+        height: 40px;
+        @include abs.breakpoint(desktop) {
+            width: 159.57px;
+            height: 58px;
+        }
+    }
+    &-description {
+        font-family: abs.$outfit-font;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        color: abs.$black-color;
+        @include abs.breakpoint(tablet) {
+            width: 36.59vw;
+            height: auto;
+        }
+        @include abs.breakpoint(desktop) {
+            width: 29.85vw;
+            height: auto;
+            font-size: 18px;
+            line-height: 28px;
+        }
+    }
+    &-list {
+        list-style: none;
+        display: flex;
+        justify-content: flex-start;
+        gap: 20px;
+        img {
+            filter: invert(1);
+            width: 20px;
+            height: 20px;
+        }
+    }    
+}

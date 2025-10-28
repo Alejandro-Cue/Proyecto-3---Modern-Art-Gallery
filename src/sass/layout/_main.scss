@@ -1,0 +1,343 @@
+@use '../abstracts/index' as abs;
+
+.hero {
+    
+    &__image {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @include abs.breakpoint(tablet) {
+            display: flex;
+            flex-direction: row-reverse;
+            margin-right: 40px;
+            margin-left: 39px;
+            gap: 65px;
+            margin-bottom: 11px;
+        }
+        @include abs.breakpoint(desktop) {
+            display: flex;
+            flex-direction: row-reverse;
+            margin-right: 0;
+            margin-left: 0;
+            gap: 50px;
+        }
+       
+    }
+    &__image-1 {
+            width: 343px;
+            height: 320px;
+            margin-bottom: 25px;
+            @include abs.breakpoint(tablet) {
+                width: 51.8vw;
+                height: auto;
+                margin-bottom: 0;
+            }
+            @include abs.breakpoint(desktop) {
+                width: 44.13vw;
+                height: auto;
+                margin-top: 20px;
+            }
+    }
+
+    &__lore {
+        @include abs.breakpoint(desktop) {
+            width: 28.62vw;
+        }
+        .hero__title {
+            font-family: abs.$bigshoulders-font;
+            font-size: 50px;
+            font-weight: 900;
+            line-height: 45px;
+            margin-left: 18px;
+            margin-bottom: 21px;
+            @include abs.breakpoint(tablet) {
+                margin-left: 0;
+                margin-bottom: 0;
+            }
+            @include abs.breakpoint(desktop) {
+                font-size: 60px;
+                line-height: 60px;
+                margin-left: 0;
+            }
+
+        }
+        .hero__description{
+            font-family: abs.$outfit-font;
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: 400;
+            color: abs.$p-color;
+            margin-left: 18px;
+            margin-right: 18px;
+            margin-bottom: 32px;
+            @include abs.breakpoint(tablet) {
+                margin-right: 0;
+                margin-left: 0;
+                margin-bottom: 0;
+            }
+            @include abs.breakpoint(desktop) {
+                font-size: 22px;
+                line-height: 32px;
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+    }
+    &__design {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        @include abs.breakpoint(tablet) {
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 120px;
+            display: grid;
+            grid-template-columns: 51.8vw 36.46vw;
+            grid-template-rows: 43.47vw 55vw;
+            grid-template-areas:
+                "design2 design1"
+                "design2 design3";
+            gap: 11px;
+            align-items: stretch;
+
+        }
+        @include abs.breakpoint(desktop) {
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 180px;
+            display: grid;
+            grid-template-columns: 44vw 28.9vw;
+            grid-template-rows: 28.42vw 28.42vw;
+            grid-template-areas:
+                "design2 design1"
+                "design2 design3";
+            gap: 30px;
+            align-items: stretch;
+
+        }
+        &-1 {
+            @include abs.breakpoint(tablet) {
+                margin: 0;
+                grid-area: design1;
+                width: 100%;
+                height: 100%;
+                
+            }
+            @include abs.breakpoint(desktop) {
+                margin: 0;
+                grid-area: design1;
+                width: 100%;
+                height: 100%;
+            }
+            img{
+                width: 343px;
+                height: 480px;
+                margin-left: 18px;
+                margin-bottom: 16px;
+                @include abs.breakpoint(tablet) {
+                    margin: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                 @include abs.breakpoint(desktop) {
+                    margin: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                
+            }
+
+        }
+        &-2 {
+            @include abs.breakpoint(tablet) {
+                grid-area: design2;
+                width: 100%;
+                height: 100%;
+            }
+            @include abs.breakpoint(desktop) {
+                grid-area: design2;
+                width: 100%;
+                height: 100%;
+            }
+            img {
+                width: 343px;
+                height: 200px;
+                margin-left: 18px;
+                margin-bottom: 16px;
+                @include abs.breakpoint(tablet) {
+                    margin: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                @include abs.breakpoint(desktop) {
+                    margin: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                
+            }
+
+        }
+        &-3 {
+            background-color: abs.$black-color;
+            margin-left: 18px;
+            margin-right: 18px;
+            margin-bottom: 120px;
+            @include abs.breakpoint(tablet) {
+                grid-area: design3;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 40px 10px 40px 10px;
+
+            }
+            @include abs.breakpoint(desktop) {
+                grid-area: design3;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 40px 10px 40px 10px;
+
+            }
+            h3 {
+                font-family: abs.$bigshoulders-font;
+                font-size: 50px;
+                font-weight: 900;
+                line-height: 45px;
+                color: abs.$white-color;
+                padding-top: 48px;
+                padding-right: 24px;
+                padding-left: 24px;
+                margin-bottom: 24px;
+            }
+            p {
+                color: abs.$white-color;
+                font-family: abs.$outfit-font;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 28px;
+                padding-right: 24px;
+                padding-left: 24px;
+                padding-bottom: 47px;
+            }
+
+        }
+    }
+}
+
+
+// Location
+
+.location__description {
+    background-color: abs.$black-color;
+    color: abs.$white-color;
+    padding: 48px 16px 56px 16px;
+    @include abs.breakpoint(tablet) {
+        padding: 88px 40px 80px 39px;
+        display: flex;
+        justify-content: space-between;
+        gap: 68px;
+    }
+    @include abs.breakpoint(desktop) {
+        padding: 104px 165px 128px 165px;
+        display: flex;
+        justify-content: space-between;
+        gap: 220px;
+    }
+    .location__title {
+        @include abs.breakpoint(tablet) {
+            width: 29.04vw;
+            height: auto;
+        }
+        @include abs.breakpoint(desktop) {
+            width: 24.29vw;
+            height: auto;
+        }
+        h2{
+            font-family: abs.$bigshoulders-font;
+            font-size: 50px;
+            font-weight: 900;
+            line-height: 45px;
+            margin-bottom: 48px;
+            @include abs.breakpoint(tablet) {
+                font-size: 55px;
+                line-height: 50px;
+            }
+            @include abs.breakpoint(desktop) {
+                font-size: 70px;
+                line-height: 70px;
+            }
+        }
+    }
+    .location__address {
+        @include abs.breakpoint(tablet) {
+            width: 51.82vw;
+            height: auto;
+        }
+        h3 {
+            color: abs.$gold-color;
+            font-size: 32px;
+            font-weight: 900;
+            line-height: 32px;
+            margin-bottom: 20px;
+            @include abs.breakpoint(desktop) {
+                font-size: 36px;
+                line-height: 36px;
+                margin-bottom: 24px;
+            }
+          
+        }
+        &-newport {
+            font-family: abs.$outfit-font;
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: 400;
+            margin-bottom: 5px;
+            @include abs.breakpoint(desktop) {
+                font-size: 22px;
+                line-height: 32px;
+            }
+        }
+        &-ri {
+            font-family: abs.$outfit-font;
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: 400;
+            margin-bottom: 5px;
+            @include abs.breakpoint(desktop) {
+                font-size: 22px;
+                line-height: 32px;
+            }
+        }
+        &-usa {
+            font-family: abs.$outfit-font;
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: 400;
+            margin-bottom: 20px;
+            @include abs.breakpoint(desktop) {
+                font-size: 22px;
+                line-height: 32px;
+                margin-bottom: 32px;
+            }
+        }
+        &-lorem {
+            font-family: abs.$outfit-font;
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: 400;
+            @include abs.breakpoint(desktop) {
+                width: 37.48vw;
+                height: auto;
+                font-size: 22px;
+                line-height: 32px;
+            }
+        }
+    }
+}   

@@ -1,0 +1,216 @@
+@use '../abstracts/index' as abs;
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    @include abs.breakpoint(tablet) {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: relative;
+        margin-bottom: 0;   
+    }
+    @include abs.breakpoint(desktop) {
+        display: flex;
+        justify-content: center;
+        margin-left: 10.1vw;
+        z-index: 2;
+        
+    }
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        flex-direction: column;
+        margin-bottom: 30px;
+        @include abs.breakpoint(tablet) {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;        
+        }
+        @include abs.breakpoint(desktop) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-right: 0;
+            margin-left: 0;
+        }
+        picture{
+            padding: 0;
+            .img{
+                width: 375px;
+                height: 240px;
+                margin-bottom: 0px;
+                @include abs.breakpoint(tablet) {
+                    width: 57vw;
+                    height: auto;
+                    z-index: 1;
+                }
+                @include abs.breakpoint(desktop) {
+                    width: 37.52vw;
+                    height: 50vh;
+                    display: block;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+    &__info{
+        @include abs.breakpoint(tablet) {
+            z-index: 2;
+            position: absolute;
+            top: 95px;
+            right: 40px;
+            width: 45.4vw;
+            height: auto;
+        }
+        @include abs.breakpoint(desktop) {
+            position: relative;
+            z-index: 3;
+            margin: 0;
+        }
+        .logo {
+            align-self: flex-start;
+            @include abs.breakpoint(desktop) {
+                position: absolute;
+                top: -89px;
+                left: -800px;
+            }
+            img {
+                filter: invert(1);
+                width: 270px;
+                height: 212px;
+                padding: 0 18px;
+                margin: 0;
+                @include abs.breakpoint(desktop) {
+                    filter: none;
+                    width: 514px;
+                    height: 176px;
+                }
+            }
+        }
+        p {
+            padding: 0 18px;
+            font-family: abs.$outfit-font;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            color: abs.$p-color;
+            margin-bottom: 50px;
+            align-self: flex-start;
+            @include abs.breakpoint(desktop) {
+                position: absolute;
+                top: -80px;
+                right: -15px;
+                width: 140%;
+                height: auto;
+                font-size: 22px;
+                line-height: 32px;
+                z-index: 4;
+
+            }
+        }
+        
+    }
+ 
+    &__button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        align-self: flex-start;
+        margin-left: 18px;
+        margin-bottom: 100px;
+        background-color: abs.$black-color;
+        color: abs.$white-color;
+        text-decoration: none;
+        font-family: abs.$outfit-font;
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 100%;
+        width: 260px;
+        height: 72px;
+        letter-spacing: 3.64px;
+        transition: all 0.3s ease;
+        @include abs.breakpoint(tablet) {
+            margin-bottom: 0;
+        }
+        @include abs.breakpoint(desktop) {
+            margin-top: 80px;
+        }
+    
+        &-text {
+            flex: 1;
+            width: 204px;
+            height: 72px;
+            text-align: center;
+            letter-spacing: 1px;
+            padding-top: 24px;
+            padding-bottom: 24px;
+            padding-left: 15px;
+            padding-right: 18px;
+            
+        }
+
+        &-icon {
+            background-color: abs.$gold-color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 56px;
+            height: 72px;
+
+            img {
+                width: 20px;
+                height: 20px;
+            }
+        
+        }
+        &:hover {
+            color: abs.$gold-color;
+            transform: scale(1.05)
+        }
+    }
+    
+}   
+
+// Location
+
+.header__location {
+    position: relative;
+    margin-bottom: 0;
+    &-image {
+        width: 100vw;
+        height: 40.88vh;
+    }
+    .header__button {
+        position: absolute;
+        top: 0;
+        left: -17px;
+        @include abs.breakpoint(tablet) {
+            top: 0;
+            left: 39px;
+        }
+        @include abs.breakpoint(desktop) {
+            top: -80px;
+            left: 156px;
+        }
+    }
+    .map__location {
+        position: absolute;
+        top: 42%;
+        left: 41%;
+        @include abs.breakpoint(tablet) {
+            left: 47%;
+        }
+        @include abs.breakpoint(desktop) {
+            top: 39%;
+            left: 47%;
+        }
+    }
+
+}
