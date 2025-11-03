@@ -14,7 +14,7 @@
         justify-content: flex-start;
         align-items: flex-start;
         position: relative;
-        margin-bottom: 0;   
+        margin-bottom: 60px;   
     }
     @include abs.breakpoint(desktop) {
         display: flex;
