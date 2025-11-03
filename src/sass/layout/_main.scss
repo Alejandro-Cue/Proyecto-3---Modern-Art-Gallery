@@ -1,6 +1,9 @@
 @use '../abstracts/index' as abs;
 
 .hero {
+    @include abs.breakpoint(tablet) {
+        margin-top: 240px;
+    }
     
     &__image {
         display: flex;
