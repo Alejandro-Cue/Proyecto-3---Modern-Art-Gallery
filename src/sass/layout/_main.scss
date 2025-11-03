@@ -22,26 +22,41 @@
             margin-left: 0;
             gap: 50px;
         }
+        @include abs.breakpoint(largedesktop) {
+            display: flex;
+            flex-direction: row-reverse;
+            margin-right: 0;
+            margin-left: 0;
+            gap: 50px;
+        }
        
     }
     &__image-1 {
-            width: 343px;
-            height: 320px;
-            margin-bottom: 25px;
-            @include abs.breakpoint(tablet) {
-                width: 51.8vw;
-                height: auto;
-                margin-bottom: 0;
-            }
-            @include abs.breakpoint(desktop) {
-                width: 44.13vw;
-                height: auto;
-                margin-top: 20px;
-            }
+        width: 343px;
+        height: 320px;
+        margin-bottom: 25px;
+        @include abs.breakpoint(tablet) {
+            width: 51.8vw;
+            height: auto;
+            margin-bottom: 0;
+        }
+        @include abs.breakpoint(desktop) {
+            width: 44.13vw;
+            height: auto;
+            margin-top: 20px;
+        }
+        @include abs.breakpoint(largedesktop) {
+            width: 44.13vw;
+            height: auto;
+            margin-top: 20px;
+        }
     }
 
     &__lore {
         @include abs.breakpoint(desktop) {
+            width: 28.62vw;
+        }
+        @include abs.breakpoint(largedesktop) {
             width: 28.62vw;
         }
         .hero__title {
@@ -56,6 +71,11 @@
                 margin-bottom: 0;
             }
             @include abs.breakpoint(desktop) {
+                font-size: 60px;
+                line-height: 60px;
+                margin-left: 0;
+            }
+            @include abs.breakpoint(largedesktop) {
                 font-size: 60px;
                 line-height: 60px;
                 margin-left: 0;
@@ -82,13 +102,19 @@
                 margin-left: 0;
                 margin-right: 0;
             }
+            @include abs.breakpoint(largedesktop) {
+                font-size: 22px;
+                line-height: 32px;
+                margin-left: 0;
+                margin-right: 0;
+            }
         }
     }
     &__design {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
         @include abs.breakpoint(tablet) {
             margin-left: 0;
             margin-right: 0;
@@ -117,6 +143,20 @@
             align-items: stretch;
 
         }
+        @include abs.breakpoint(largedesktop) {
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 180px;
+            display: grid;
+            grid-template-columns: 44vw 28.9vw;
+            grid-template-rows: 28.42vw 28.42vw;
+            grid-template-areas:
+                "design2 design1"
+                "design2 design3";
+            gap: 30px;
+            align-items: stretch;
+
+        }
         &-1 {
             @include abs.breakpoint(tablet) {
                 margin: 0;
@@ -126,6 +166,12 @@
                 
             }
             @include abs.breakpoint(desktop) {
+                margin: 0;
+                grid-area: design1;
+                width: 100%;
+                height: 100%;
+            }
+            @include abs.breakpoint(largedesktop) {
                 margin: 0;
                 grid-area: design1;
                 width: 100%;
@@ -142,13 +188,18 @@
                     height: 100%;
                     object-fit: cover;
                 }
-                 @include abs.breakpoint(desktop) {
+                @include abs.breakpoint(desktop) {
                     margin: 0;
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
                 }
-                
+                @include abs.breakpoint(largedesktop) {
+                    margin: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
             }
 
         }
@@ -159,6 +210,11 @@
                 height: 100%;
             }
             @include abs.breakpoint(desktop) {
+                grid-area: design2;
+                width: 100%;
+                height: 100%;
+            }
+            @include abs.breakpoint(largedesktop) {
                 grid-area: design2;
                 width: 100%;
                 height: 100%;
@@ -180,7 +236,12 @@
                     height: 100%;
                     object-fit: cover;
                 }
-                
+                @include abs.breakpoint(largedesktop) {
+                    margin: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
             }
 
         }
@@ -203,7 +264,13 @@
                 height: 100%;
                 margin: 0;
                 padding: 40px 10px 40px 10px;
-
+            }
+            @include abs.breakpoint(largedesktop) {
+                grid-area: design3;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 40px 10px 40px 10px;
             }
             h3 {
                 font-family: abs.$bigshoulders-font;
@@ -250,12 +317,22 @@
         justify-content: space-between;
         gap: 220px;
     }
+    @include abs.breakpoint(largedesktop) {
+        padding: 104px 165px 128px 165px;
+        display: flex;
+        justify-content: space-between;
+        gap: 220px;
+    }
     .location__title {
         @include abs.breakpoint(tablet) {
             width: 29.04vw;
             height: auto;
         }
         @include abs.breakpoint(desktop) {
+            width: 24.29vw;
+            height: auto;
+        }
+        @include abs.breakpoint(largedesktop) {
             width: 24.29vw;
             height: auto;
         }
@@ -270,6 +347,10 @@
                 line-height: 50px;
             }
             @include abs.breakpoint(desktop) {
+                font-size: 70px;
+                line-height: 70px;
+            }
+            @include abs.breakpoint(largedesktop) {
                 font-size: 70px;
                 line-height: 70px;
             }
@@ -291,7 +372,11 @@
                 line-height: 36px;
                 margin-bottom: 24px;
             }
-          
+            @include abs.breakpoint(largedesktop) {
+                font-size: 36px;
+                line-height: 36px;
+                margin-bottom: 24px;
+            }
         }
         &-newport {
             font-family: abs.$outfit-font;
@@ -303,6 +388,10 @@
                 font-size: 22px;
                 line-height: 32px;
             }
+            @include abs.breakpoint(largedesktop) {
+                font-size: 22px;
+                line-height: 32px;
+            }
         }
         &-ri {
             font-family: abs.$outfit-font;
@@ -311,6 +400,10 @@
             font-weight: 400;
             margin-bottom: 5px;
             @include abs.breakpoint(desktop) {
+                font-size: 22px;
+                line-height: 32px;
+            }
+            @include abs.breakpoint(largedesktop) {
                 font-size: 22px;
                 line-height: 32px;
             }
@@ -326,6 +419,11 @@
                 line-height: 32px;
                 margin-bottom: 32px;
             }
+            @include abs.breakpoint(largedesktop) {
+                font-size: 22px;
+                line-height: 32px;
+                margin-bottom: 32px;
+            }
         }
         &-lorem {
             font-family: abs.$outfit-font;
@@ -333,6 +431,12 @@
             line-height: 28px;
             font-weight: 400;
             @include abs.breakpoint(desktop) {
+                width: 37.48vw;
+                height: auto;
+                font-size: 22px;
+                line-height: 32px;
+            }
+            @include abs.breakpoint(largedesktop) {
                 width: 37.48vw;
                 height: auto;
                 font-size: 22px;
