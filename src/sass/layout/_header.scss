@@ -20,6 +20,20 @@
         justify-content: center;
         margin-left: 10.1vw;
         z-index: 2;
+        @include abs.breakpoint(desktop) {
+        padding-right: 164px;
+        padding-left: 165px;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 9.27vw;
+            height: 31.28%;
+            background-color: abs.$black-color;
+            z-index: 1;
+        }
+    }
         
     }
     &__container {
