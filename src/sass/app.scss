@@ -13,8 +13,6 @@
 body {
     background-color: rgba(252, 250, 249, 1);
     position: relative;
-<<<<<<< HEAD
-=======
     @include abs.breakpoint(desktop) {
         padding-right: 164px;
         padding-left: 165px;
@@ -29,7 +27,6 @@ body {
             z-index: 1;
         }
     }
->>>>>>> ab2f62bcb6a2e85fb0002206e5234ea63d33af06
 }
 .location {
     background-color: rgba(252, 250, 249, 1);
