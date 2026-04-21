@@ -2,12 +2,95 @@
 
 .header {
     background-color: abs.$white-color;
-    padding: 0rem 1rem;
+    padding: 0rem 0rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__info {
+        margin-top: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        display: flex;
+        flex-direction: column;
+        
+
+        .logo {
+            display: block;
+            width: fit-content;
+            img{
+                filter: invert(100%);
+                width: 15.4rem;
+                height: auto;
+            }
+        }
+
+        p {
+            font-family: abs.$outfit-font;
+            font-size: 18px;
+            color: abs.$p-color;
+            line-height: 28px;
+            margin-top: 1.8rem;
+            max-width: 350px;
+            
+        }
+ 
+    }     
+
+    &__button {
+        display: inline-flex; // Une los dos bloques lateralmente
+        align-items: stretch; // Hace que ambos midan lo mismo de alto
+        text-decoration: none;
+        width: fit-content;
+        transition: all 0.3s ease;
+        margin-top: 1.8rem;
+
+        &-text {
+            background-color: abs.$black-color;
+            color: abs.$white-color;
+            font-family: abs.$outfit-font;
+            font-weight: 800;
+            font-size: 1.25rem;
+            letter-spacing: 3.6px;
+            padding: 1.5rem 2rem;
+            display: flex;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+
+        &-icon {
+            background-color: abs.$gold-color; 
+            padding: 0 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s ease;
+
+            img {
+                width: 10px;
+                height: auto;
+                transition: filter 0.7s ease;
+                filter: brightness(0) invert(1);
+            }
+        }
+
+        // Efecto Hover
+        &:hover {
+            .header__button-text {
+                background-color: abs.$gold-color;
+            }
+            .header__button-icon {
+                background-color: abs.$black-color;
+
+            }
+        }
+    }
 }
+
