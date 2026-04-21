@@ -41,7 +41,8 @@
         @include abs.breakpoint(tablet) {
             display: flex;
             justify-content: space-between;
-            align-items: flex-start;        
+            align-items: flex-start; 
+            height: 100%;       
         }
         @include abs.breakpoint(desktop) {
             display: flex;
