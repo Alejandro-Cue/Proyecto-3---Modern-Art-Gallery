@@ -1,43 +1,35 @@
 @use '../abstracts/index' as abs;
 
 .header {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    flex-direction: column;
-    width: 100%;
-    height: 800px;
-    position: relative;
+  position: relative;
+  overflow: hidden; // Vital para que el bloque no cree scroll horizontal
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    // En lugar de moverlo a la izquierda, lo hacemos nacer en el borde 0
+    // y le damos un ancho fijo o proporcional que llegue hasta el logo.
+    width: 33%; 
+    height: 100%;
+    background-color: abs.$black-color;
+    z-index: 0; // Asegúrate de que .header__container tenga z-index: 1
+    
     @include abs.breakpoint(tablet) {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: flex-start;
-        position: relative;
-        margin-bottom: 60px;   
+      display: none; // El diseño de tablet no suele llevar ese bloque lateral
     }
+    
     @include abs.breakpoint(desktop) {
-        display: flex;
-        justify-content: center;
-        margin-left: 10.1vw;
-        z-index: 2;
-        padding-right: 164px;
-        padding-left: 165px;
+      display: block;
     }
-     @include abs.breakpoint(largedesktop) {
-        display: flex;
-        justify-content: center;
-        margin-left: 10.1vw;
-        z-index: 2;
-        padding-right: 164px;
-        padding-left: 165px;
-    }
-    &__container {
-        display: flex;
-        justify-content: center;
-        align-items: center; 
-        flex-direction: column;
-        margin-bottom: 30px;
+  }
+}
+
+.header__container {
+  position: relative;
+  z-index: 1; // Esto garantiza que el contenido esté SIEMPRE por encima del bloque negro
+}
         @include abs.breakpoint(tablet) {
             display: flex;
             justify-content: space-between;
