@@ -8,10 +8,32 @@
     width: 100%;
     top: 0;
     z-index: 1000;
+    @include abs.breakpoint(tablet) {
+
+
+    }
 
     &__container {
         display: flex;
         flex-direction: column;
+        @include abs.breakpoint(tablet) {
+            display: grid;
+            grid-template-columns: repeat(13, 1fr);
+            align-items: center;   
+            position: relative;         position: relative;
+        }
+        picture {
+            @include abs.breakpoint(tablet) {
+                grid-column: 1 / 9;
+                grid-row: 1;
+                z-index: 1;                                                                                                                                                                                         
+            }
+            img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+        }
     }
 
     &__info {
@@ -20,6 +42,15 @@
         margin-right: 1rem;
         display: flex;
         flex-direction: column;
+        @include abs.breakpoint(tablet) {
+            grid-row: 1;
+            margin-top: 0;
+            margin-left: 0;
+            grid-column: 8 / 14;
+            z-index: 2;
+            padding-left: 1.5rem;
+            padding-bottom: 1rem;
+        }
         
 
         .logo {
@@ -29,6 +60,9 @@
                 filter: invert(100%);
                 width: 15.4rem;
                 height: auto;
+                @include abs.breakpoint(tablet) {
+                    width: 20rem;
+                }
             }
         }
 
@@ -39,6 +73,12 @@
             line-height: 28px;
             margin-top: 1.8rem;
             max-width: 350px;
+            @include abs.breakpoint(tablet) {
+                font-size: 18px;
+                line-height: 28px;
+                font-weight: 400;
+                margin-top: 4rem;
+            }
             
         }
  
@@ -51,6 +91,9 @@
         width: fit-content;
         transition: all 0.3s ease;
         margin-top: 1.8rem;
+        @include abs.breakpoint(tablet) {
+            margin-top: 4rem;
+        }
 
         &-text {
             background-color: abs.$black-color;
