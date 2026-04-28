@@ -1,0 +1,74 @@
+<!doctype html>
+<html class="no-js" lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CSS Entregable 03 | Location</title>
+  <link rel="stylesheet" href="./src/sass/app.scss">  
+  <meta name="description" content="Location of the Modern Art Gallery. Find us in the heart of the city, with easy access to public transportation and parking.">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+
+  <link rel="stylesheet" href="./css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <main class="location_main">
+        <section class="map">
+            <a class="button" href="./index.html">
+                <span class="button__icon">
+                    <img src="./img/flecha-izquierda.svg" alt="Imagen de flecha derecha.">
+                </span>
+                <span class="button__text">BACK TO HOME</span>
+            </a>
+            <picture>
+                <source srcset="./img/map-desktop.png" media="(min-width: 1024px)">
+                <source srcset="./img/map-tablet.png" media="(min-width: 768px)">
+                <img class="img" src="./img/map.png" alt="Imagen de cabecera responsive"> 
+            </picture>
+            <img class="map__location" src="./img/location.svg" alt="localización de la galería">
+        </section>
+        <section class="location">
+            <h2>OUR LOCATION</h2>
+            <div class="location__info">
+                <h4>99 KING STREET</h4>
+                <p>Newport</p>
+                <p>RI 02840</p>
+                <p>United States of America</p>
+            </div>
+            <div class="location__description">
+                <p>Our newly opened gallery is located near the Edward King House
+                    on 99 King Street, the Modern Art Gallery is free to all visitors
+                    and open seven days a week from 8am to 9pm.
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer__location">
+        <div class="footer__location-design">
+            <a class="footer__location-logo" href="#"><img src="./img/modernartgallery-logo.svg" alt="Logotipo Modern Art Gallery"></a>
+            <p>The Modern Art Gallery is free to all visitors and open seven days a week from 8am to 9pm. Find us at 99 King Street, Newport, USA.</p>
+            <div class="footer__location-logos">
+                <a href="#"><img src="./img/facebook-logo.svg" alt="Logotipo de Facebook"></a>
+                <a href="#"><img src="./img/instagram-logo.svg" alt="Logotipo de Instagram"></a>
+                <a href="#"><img src="./img/twitter-logo.svg" alt="Logotipo de Twitter"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -8,6 +8,9 @@
     @include abs.breakpoint(tablet) {
         padding: 5rem 2.2rem;
     }
+    @include abs.breakpoint(desktop) {
+        padding: 6rem 9rem;
+    }
     &__design {
         display: flex;
         flex-direction: column;
@@ -15,7 +18,12 @@
         @include abs.breakpoint(tablet) {
             flex-direction: row;
             justify-content: space-between;
-            align-items: flex-start;;
+            align-items: flex-start;
+        }
+        @include abs.breakpoint(desktop) {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
         }
         &__logo {
             display: block;
@@ -27,7 +35,11 @@
                 width: 13.4rem;
                 max-width: 15rem;
                 height: auto;
+                @include abs.breakpoint(desktop) {
+                    width: 15rem;
+                }
             }
+
         }
 
         p {
@@ -45,6 +57,14 @@
                 max-width: 275px;
 
             }
+            @include abs.breakpoint(desktop) {
+                font-size: 18px;
+                line-height: 28px;
+                font-weight: 400;
+                margin-top: 0;
+                max-width: 460px;
+
+            }
         }
         &-logos {
             display: flex;
@@ -55,11 +75,20 @@
                 align-self: flex-start;
                 margin-bottom: 4rem;
             }
+            @include abs.breakpoint(desktop) {
+                gap: 2rem;
+                margin-top: 0;
+                align-self: flex-start;
+                
+            }
             a {
                 display: block;
                 width: fit-content;
                 margin-top: 1.5rem;
                 @include abs.breakpoint(tablet) {
+                    margin-top: 0;
+                }
+                @include abs.breakpoint(desktop) {
                     margin-top: 0;
                 }
                 img {
@@ -70,4 +99,83 @@
         }
     }
 
+}
+
+// Location //
+.footer__location {
+    background-color: abs.$gold-color;
+    padding: 4rem 2rem;
+    width: 100%;
+    height: auto;
+    @include abs.breakpoint(tablet) {
+        padding: 5rem 2.2rem;
+    }
+    @include abs.breakpoint(desktop) {
+        padding: 6rem 14rem;
+    }
+    &-design {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        @include abs.breakpoint(tablet) {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 4rem;
+        }
+        @include abs.breakpoint(desktop) {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 4rem;            
+        }
+    }
+    &-logo {
+        display: block;
+        width: fit-content;
+        img {
+            display: flex;
+            align-self: flex-start;
+            width: 8.4rem;
+            max-width: 15rem;
+            height: auto;
+            filter: invert(100%);
+            height: auto;
+            
+        }
+    }
+    p {
+        font-family: abs.$outfit-font;
+        text-align: left;
+        font-size: 20px;
+        line-height: 26px;
+        font-weight: 200;
+        max-width: 350px;
+        color: abs.$black-color;
+        @include abs.breakpoint(tablet) {
+            font-weight: 300;
+            margin-top: 0;
+            margin-right: 3rem;
+            max-width: 350px;
+
+        }
+    }
+    
+    &-logos {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+        a {
+            display: block;
+            width: fit-content;
+            img {
+                width: 1.5rem;
+                height: auto;
+                filter: invert(100%);
+                @include abs.breakpoint(tablet) {
+                    max-width: 5rem;
+                }
+            }
+        }
+    }
 }
