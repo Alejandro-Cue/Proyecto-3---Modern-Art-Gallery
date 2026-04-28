@@ -108,6 +108,7 @@
     width: 100%;
     height: auto;
     @include abs.breakpoint(tablet) {
+        margin-top: 0;
         padding: 5rem 2.2rem;
     }
     @include abs.breakpoint(desktop) {
