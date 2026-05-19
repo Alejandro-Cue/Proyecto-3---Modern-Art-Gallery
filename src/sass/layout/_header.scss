@@ -5,12 +5,17 @@
     padding: 0rem 0rem;
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
     z-index: 1;
     position: relative;
     overflow: visible;
-    @include abs.breakpoint(tablet) {
-
+    @include abs.breakpoint(desktop) {
+        background: linear-gradient(
+            to right, 
+            abs.$black-color calc(33.33% - (5rem * 0.3333)), 
+            abs.$white-color calc(33.33% - (5rem * 0.3333))
+        );ackground: linear-gradient(to right, abs.$black-color 33.33%, abs.$white-color 33.34%);
 
     }
     
@@ -22,15 +27,15 @@
             display: grid;
             grid-template-columns: repeat(13, 1fr);
             align-items: center;   
-            position: relative;         position: relative;
+            position: relative;;
         }
         @include abs.breakpoint(desktop) {
             display: grid;
             grid-template-columns: repeat(12, 1fr);
             min-height: 20vh;
             padding-right: 5rem;
-            background: linear-gradient(to right, abs.$black-color 33.33%, abs.$white-color 33.34%);
-
+            max-width: 1440px;
+            margin: 0 auto;
         }
     }
         picture {
@@ -44,10 +49,11 @@
                 grid-row: 1 / 2;
                 z-index: 1;
                 height: 100%;
+                width: 100%;
             }
             img {
                 width: 100%;
-                height: auto;
+                height: 100%;
                 display: block;
                 object-fit: cover;
             }
