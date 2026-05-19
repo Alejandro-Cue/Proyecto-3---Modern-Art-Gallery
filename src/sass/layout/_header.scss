@@ -32,7 +32,7 @@
         @include abs.breakpoint(desktop) {
             display: grid;
             grid-template-columns: repeat(12, 1fr);
-            min-height: 20vh;
+            min-height: 45rem;
             padding-right: 5rem;
             max-width: 1440px;
             margin: 0 auto;
