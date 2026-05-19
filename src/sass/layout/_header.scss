@@ -11,11 +11,7 @@
     position: relative;
     overflow: visible;
     @include abs.breakpoint(desktop) {
-        background: linear-gradient(
-            to right, 
-            abs.$black-color 48rem, 
-            abs.$white-color 48rem
-        );
+        background: linear-gradient(to right, rgb(21, 21, 21) 48rem, rgb(255, 255, 255) 48rem);
     }
 
     &__container {

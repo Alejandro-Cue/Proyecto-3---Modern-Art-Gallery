@@ -1,6 +1,5 @@
 import './sass/app.scss';
 import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.js'
 import '../img/header-img-desktop.jpg';
 import '../img/header-img-tablet.jpg';
