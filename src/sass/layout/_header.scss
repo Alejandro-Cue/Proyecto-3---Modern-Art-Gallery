@@ -13,8 +13,8 @@
     @include abs.breakpoint(desktop) {
         background: linear-gradient(
             to right, 
-            abs.$black-color calc(50% - 14.4rem), 
-            abs.$white-color calc(50% - 14.4rem)
+            abs.$black-color calc(50% - 72rem + 48rem), 
+            abs.$white-color calc(50% - 72rem + 48rem)
         );
     }
 
@@ -30,8 +30,8 @@
         }
         @include abs.breakpoint(desktop) {
             display: grid;
-            grid-template-columns: repeat(4, 12rem) repeat(5, 6.75rem) repeat(3, 19.08rem);
-            grid-template-rows: 45rem;            
+            grid-template-columns: repeat(12, 1fr);                   
+            grid-template-rows: 45rem;
             height: 45rem;
             max-width: 144rem;
             margin: 0 auto;
@@ -39,7 +39,7 @@
             padding-right: 0;
             
         }
-    }
+    
         picture {
             @include abs.breakpoint(tablet) {
                 grid-column: 1 / 9;
@@ -47,20 +47,25 @@
                 z-index: 1;                                                                                                                                                                                         
             }
             @include abs.breakpoint(desktop) {
-                grid-column: 5 / 10 !important;
+                grid-column: 5 / 9 !important;
                 grid-row: 1 / 2 !important;
                 z-index: 2;
-                height: 45rem;
-                width: 33.75rem;
-                justify-self: left;
+                height: calc(45rem + 3.45rem);
+                width: calc(100% + 3.45rem);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
             }
             img {
                 width: 100%;
                 height: 100%;
                 display: block;
                 object-fit: cover;
+                object-position: center center;
             }
         }
+    }
     
 
     &__info {
@@ -79,11 +84,12 @@
             padding-bottom: 1rem;
         }
         @include abs.breakpoint(desktop) {
-            grid-column: 9 / 13 !important;
+            grid-column: 8 / 13 !important;
             grid-row: 1 / 2 !important;
             z-index: 3;
             align-self: center;
             margin: 0;
+            padding-left: 5rem;
         }
         
 
