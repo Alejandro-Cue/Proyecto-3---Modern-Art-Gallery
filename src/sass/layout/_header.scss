@@ -30,12 +30,13 @@
         }
         @include abs.breakpoint(desktop) {
             display: grid;
-            grid-template-columns: repeat(12, 1fr);
-            grid-template-rows: 45rem;
-            min-height: 45rem;
-            padding-right: 5rem;
-            max-width: 1440px;
+            grid-template-columns: repeat(4, 12rem) repeat(5, 6.75rem) repeat(3, 19.08rem);
+            grid-template-rows: 45rem;            
+            height: 45rem;
+            max-width: 144rem;
             margin: 0 auto;
+            position: relative;
+            padding-right: 0;
             
         }
     }
