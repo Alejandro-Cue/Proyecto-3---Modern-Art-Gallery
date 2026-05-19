@@ -13,8 +13,8 @@
     @include abs.breakpoint(desktop) {
         background: linear-gradient(
             to right, 
-            abs.$black-color calc(50% - 240px - (5rem * 0.3333)), 
-            abs.$white-color calc(50% - 240px - (5rem * 0.3333))
+            abs.$black-color calc(50% - 14.4rem), 
+            abs.$white-color calc(50% - 14.4rem)
         );
     }
 
