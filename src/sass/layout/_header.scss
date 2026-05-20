@@ -12,6 +12,7 @@
     overflow: visible;
     @include abs.breakpoint(desktop) {
         background: linear-gradient(to right, rgb(21, 21, 21) 48rem, rgb(255, 255, 255) 48rem);
+
     }
 
     &__container {
@@ -46,6 +47,7 @@
                 width: 100%;
                 overflow: hidden;
                 align-self: stretch;
+                display: flex;
                 
             }
             img {
